@@ -33,6 +33,19 @@
     "demos-e2e": {
       "tags": [],
       "implicitDependencies": ["demos"]
+    },
+    "kafka-consumer": {
+      "tags": []
+    },
+    "kafka-producer": {
+      "tags": []
+    },
+    "kafka-system-messages": {
+      "tags": []
+    },
+    "kafka-system-messages-e2e": {
+      "tags": [],
+      "implicitDependencies": ["kafka-system-messages"]
     }
   }
 }

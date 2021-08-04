@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tonyk/demos-kafka-consumer-lib": ["libs/kafka-consumer/src/index.ts"],
+      "@tonyk/demos-kafka-producer-lib": ["libs/kafka-producer/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
