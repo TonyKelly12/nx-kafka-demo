@@ -10,7 +10,7 @@ services:
     - ./config/zookeeper-1/zookeeper.properties:/kafka/config/zookeeper.properties
   kafka-1:
     container_name: kafka-1
-    image: aimvector/kafka:2.7.0
+    image: confluentinc/cp-zookeeper:latest
     build: 
       context: .
     volumes:
@@ -18,7 +18,7 @@ services:
     - ./data/kafka-1/:/tmp/kafka-logs/
   kafka-2:
     container_name: kafka-2
-    image: aimvector/kafka:2.7.0
+    image: confluentinc/cp-zookeeper:latest
     build: 
       context: .
     volumes:
@@ -26,7 +26,7 @@ services:
     - ./data/kafka-2/:/tmp/kafka-logs/
   kafka-3:
     container_name: kafka-3
-    image: aimvector/kafka:2.7.0
+    image: confluentinc/cp-zookeeper:latest
     build: 
       context: .
     volumes:
@@ -34,7 +34,7 @@ services:
     - ./data/kafka-3/:/tmp/kafka-logs/
   kafka-producer:
     container_name: kafka-producer
-    image: aimvector/kafka:2.7.0
+    image: confluentinc/cp-zookeeper:latest
     build: 
       context: .
     working_dir: /kafka
@@ -43,7 +43,7 @@ services:
     tty: true
   kafka-consumer:
     container_name: kafka-consumer
-    image: aimvector/kafka:2.7.0
+    image: confluentinc/cp-zookeeper:latest
     build: 
       context: .
     working_dir: /kafka
