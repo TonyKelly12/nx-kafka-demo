@@ -1,0 +1,38 @@
+.auction-app-container{
+    display: flex;
+}
+.user-info-container{
+    float: left;
+}
+
+.item-info-container{
+    position: absolute;
+    top: 35%;
+    left: 34.5%
+}
+
+.bid-component-container{
+    position: absolute;
+    top: 82%;
+    left: 75%
+}
+
+.bid-submit-container{
+    position: absolute;
+    top: 90%;
+    left: 43%
+}
+
+.submit-button {
+    width: 200px;
+    height: 100px;
+}
+
+.up-next-container{
+    left:80%
+}
+
+.users-bid-container {
+    position: absolute;
+    left: 44%;
+}

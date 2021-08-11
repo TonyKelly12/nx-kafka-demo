@@ -1,0 +1,16 @@
+.component-container {
+    display: flex;
+}
+
+.user-info-container {
+    display: inline-flex;
+}
+
+.info-title{
+    margin-right: 8px;
+}
+
+.info-detail {
+    position: relative;
+    top: 6px;
+}
