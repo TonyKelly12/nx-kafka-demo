@@ -13,10 +13,32 @@ import { AuctionItemListComponent } from './auction-app/auction-item-list/auctio
 import { UsersBidListComponent } from './auction-app/users-bid-list/users-bid-list.component';
 import { LoginComponent } from './auction-app/login/login.component';
 import { SignUpComponent } from './auction-app/sign-up/sign-up.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [AppComponent, AuctionAppComponent, UserInfoComponent, ItemDetailComponent, BidAmountComponent, UserItemListComponent, AuctionItemListComponent, UsersBidListComponent, LoginComponent, SignUpComponent],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  declarations: [
+    AppComponent,
+    AuctionAppComponent,
+    UserInfoComponent,
+    ItemDetailComponent,
+    BidAmountComponent,
+    UserItemListComponent,
+    AuctionItemListComponent,
+    UsersBidListComponent,
+    LoginComponent,
+    SignUpComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatInputModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -16,15 +16,16 @@ export class LoginComponent implements OnInit {
   formData!: LoginFormData
 
   constructor(private fb: FormBuilder) {
-    this.loginForm.valueChanges.subscribe(fd =>{
-      this.formData = fd;
-    })
+  
   }
   
   ngOnInit(): void {
     this.loginForm = this.fb.group({
       email: '',
       password: ''
+    })
+    this.loginForm.valueChanges.subscribe(fd =>{
+      this.formData = fd;
     })
   }
 

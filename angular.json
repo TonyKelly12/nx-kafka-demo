@@ -18,7 +18,7 @@
             "tsConfig": "apps/demos/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["apps/demos/src/favicon.ico", "apps/demos/src/assets"],
-            "styles": ["apps/demos/src/styles.scss"],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css", "apps/demos/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
