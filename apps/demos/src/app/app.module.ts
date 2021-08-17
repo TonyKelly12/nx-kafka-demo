@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,10 +11,12 @@ import { BidAmountComponent } from './auction-app/bid-amount/bid-amount.componen
 import { UserItemListComponent } from './auction-app/user-item-list/user-item-list.component';
 import { AuctionItemListComponent } from './auction-app/auction-item-list/auction-item-list.component';
 import { UsersBidListComponent } from './auction-app/users-bid-list/users-bid-list.component';
+import { LoginComponent } from './auction-app/login/login.component';
+import { SignUpComponent } from './auction-app/sign-up/sign-up.component';
 
 @NgModule({
-  declarations: [AppComponent, AuctionAppComponent, UserInfoComponent, ItemDetailComponent, BidAmountComponent, UserItemListComponent, AuctionItemListComponent, UsersBidListComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, AuctionAppComponent, UserInfoComponent, ItemDetailComponent, BidAmountComponent, UserItemListComponent, AuctionItemListComponent, UsersBidListComponent, LoginComponent, SignUpComponent],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
